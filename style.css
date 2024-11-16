@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f33;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Website Title */
+.website-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-item img {
+    margin-right: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Projects Section */
+.projects-title {
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project Tile */
+.tile {
+    background-color: #40444b;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+}
+
+.tile p {
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Project Link Styles */
+.tile a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Set link text color to white */
+    outline: none;
+    border: none;
+}
+
+.tile a:visited {
+    color: #ffffff; /* Ensure visited links stay white */
+}
+
+.tile a:hover,
+.tile a:focus {
+    text-decoration: none; /* No underline on hover or focus */
+    color: #ffffff; /* Keep color white on hover */
+    outline: none;
+    border: none;
+}
+
+/* Hover Effect on Tiles */
+.tile:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}
