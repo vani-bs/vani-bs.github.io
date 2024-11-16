@@ -39,8 +39,10 @@ body {
 .about-text {
     max-width: 500px;
     text-align: justify;
+    margin-left: 20px;
 }
 
+/* Contact Information */
 .contact-icons {
     margin-top: 20px;
 }
@@ -69,33 +71,36 @@ body {
     height: 32px;
 }
 
-/* Projects Section */
-.projects-title {
+/* Publications Section */
+.publications-title {
     font-size: 28px;
     margin-top: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/* Project Grid */
-.project-grid {
+/* Publication Grid */
+.publication-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Project Tile */
+/* Publication Tile */
 .tile {
     background-color: #40444b;
     border-radius: 10px;
-    transition: transform 0.3s ease;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tile img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
 }
 
 .tile p {
@@ -105,29 +110,23 @@ body {
     text-align: center;
 }
 
-/* Project Link Styles */
+/* Publication Link Styles */
 .tile a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Set link text color to white */
+    text-decoration: none;
+    color: #ffffff;
     outline: none;
-    border: none;
-}
-
-.tile a:visited {
-    color: #ffffff; /* Ensure visited links stay white */
 }
 
 .tile a:hover,
 .tile a:focus {
-    text-decoration: none; /* No underline on hover or focus */
-    color: #ffffff; /* Keep color white on hover */
-    outline: none;
-    border: none;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 /* Hover Effect on Tiles */
 .tile:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
